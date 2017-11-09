@@ -1,11 +1,21 @@
 <!DOCTYPE PHP>
 <html>
 	<body>
+		<?PHP
+			include("footer.php");
+		?>
 		<head>
 			<style>#nav-container{margin-top: -100px;}</style>
 		</head>
 		<?PHP
 			include("header.php");
+			$value = "";
+			$celcius = "";
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+				$celcius = $_POST["value1"];
+				$value =  $celcius*9/5+32;
+			}
 		?>
 		<div class="main-container" style="background-color: #cccccc; height: 100%;">
 			<div class="content-container2">
@@ -15,18 +25,17 @@
 					</div>
 				</div>
 				<div class="content">
-					<h3>PHP Conversion</h3>
-					<form action="" method="POST">
-						Input: <input type="text" name="value1">
-						<button type="submit">Calculate</button>
-						<h2 id="conversionResult">Result</h2>
+					<h3>PHP Temperature Conversion</h3>
+					<form style="height:80px;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+						Temperature in Celcius: <input type="text" name="value1" value=""> °C
+						<br><button type="submit">Calculate</button>
 					</form>
+					<h3>Result in Fahrenheit:</h3>
+					<?PHP 
+						echo $value;
+					?>
 				</div>
 			</div>
 		</div>
 	</body>
-	<?PHP
-		include("footer.php");
-		echo $_POST["value1"];
-	?>
 </html>

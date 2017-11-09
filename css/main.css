@@ -132,6 +132,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+form {
+	height: 200px;
+}
 
 
 /* Gallery page */
@@ -153,71 +156,7 @@ body {
 .content>p {
 	margin: 40px;
 	font-size: 20px;
-}
-
-/* Contact page */
-
-.emailMsg {
-	display: none;
-	background-color: #47c66d;
-	position: absolute;
-	width: 700px;
-	height: 150px;
-	margin: 100px 0 0 0;
-}
-.emailMsg>h1{
-	color: white;
-}
-.emailMsg>button {
-	width: 80px;
-	height: 50px;
-	margin-left: 50px;
-}
-.form-container {
-	display: block;
-	width: 700px;
-	height: 500px;
-	margin: auto;
-}
-.content>form {
-	border: none;
-	height: 100%;
-
-}
-form fieldset {
-	height: 100%;
-	border: none;
-}
-input {
-	margin: 10px;
-	border: solid 1px black;
-}
-textarea {
-	margin: 10px;
- 	border: solid 1px black;
-}
-.send-button {
-	height: 30px;
-	width: 50px;
-	background-color: #4286f4;
-	color: white;
-	border: none;
-	cursor: pointer;
-}
-.reset-button {
-	height: 30px;
-	width: 50px;
-	background-color: #ad9900;
-	color: white;
-	color: white;
-	border: none;
-	cursor: pointer;
-}
-
-form fieldset>button:hover {
-	opacity: 0.5;
-}
-	
+}	
 @media only screen and (max-width: 1600px) {
 	.main-container {
 		width: 900px;
