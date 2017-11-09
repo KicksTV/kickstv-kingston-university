@@ -1,0 +1,32 @@
+* { margin: 0; padding: 0; }
+body { background: #666; }
+h1,h2,h3,h4 { margin: 0 0 3px 0; }
+
+h1 { color: white; font: bold 52px Helvetica, Arial, Sans-Serif;
+  text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902;
+}
+h1:hover {
+  color: red;position: relative; top: -10px; left: -3px; 
+  text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;
+}
+h2 { color: white; font: bold 34px Helvetica, Arial, Sans-Serif;
+  text-shadow: 1px 1px #02a2fe, 2px 2px #02a2fe, 3px 3px #02a2fe;
+		}
+h2:hover {
+  color: red;position: relative; top: -10px; left: -3px; 
+  text-shadow: 1px 1px #02a2fe, 2px 2px #02a2fe, 3px 3px #02a2fe, 4px 4px #02a2fe, 5px 5px #02a2fe, 6px 6px #02a2fe;
+}
+h3 { color: white; font: bold 42px Helvetica, Arial, Sans-Serif;
+  text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902;
+}
+h3:hover {
+  color: red;position: relative; top: -10px; left: -3px; 
+  text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;
+}
+h4 { color: white; font: bold 24px Helvetica, Arial, Sans-Serif;
+  text-shadow: 1px 1px #02a2fe, 2px 2px #02a2fe, 3px 3px #02a2fe;
+}
+h4:hover {
+  color: red;position: relative; top: -10px; left: -3px; 
+  text-shadow: 1px 1px #02a2fe, 2px 2px #02a2fe, 3px 3px #02a2fe, 4px 4px #02a2fe, 5px 5px #02a2fe, 6px 6px #02a2fe;
+}  
